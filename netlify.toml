@@ -1,0 +1,69 @@
+[build]
+publish = "."
+
+[[headers]]
+for = "/sw.js"
+[headers.values]
+Cache-Control = "no-cache"
+
+[[headers]]
+for = "/*"
+[headers.values]
+X-Content-Type-Options = "nosniff"
+Referrer-Policy = "strict-origin-when-cross-origin"
+
+# --- redirects from the old v3 URL structure ---
+[[redirects]]
+from = "/curriculum.html"
+to = "/academy.html"
+status = 301
+
+[[redirects]]
+from = "/services/language-services.html"
+to = "/language-services.html"
+status = 301
+
+[[redirects]]
+from = "/services/app-development.html"
+to = "/services/web-development.html"
+status = 301
+
+[[redirects]]
+from = "/services/corporate-websites.html"
+to = "/services/web-development.html"
+status = 301
+
+[[redirects]]
+from = "/services/ai-digital-solutions.html"
+to = "/services.html"
+status = 301
+
+[[redirects]]
+from = "/services/content-services.html"
+to = "/services.html"
+status = 301
+
+[[redirects]]
+from = "/services/digital-consulting.html"
+to = "/services.html"
+status = 301
+
+[[redirects]]
+from = "/services/school-websites.html"
+to = "/services/school-management-systems.html"
+status = 301
+
+[[redirects]]
+from = "/services/maintenance.html"
+to = "/services/retainer.html"
+status = 301
+
+[[redirects]]
+from = "/services/social-media-setup.html"
+to = "/services/social-media-management.html"
+status = 301
+
+[[redirects]]
+from = "/services/social-media-services.html"
+to = "/services/social-media-management.html"
+status = 301
